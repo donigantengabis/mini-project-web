@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #9BABB8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bar {
+    position: relative;
+    width: 100%;
+    background: #EEE3CB;
+}
+
+.logo {
+    float: left;
+}
+
+.logo a {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.menubar {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* Untuk membuat elemen logo dan menu terpisah */
+    align-items: center;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #D7C0AE;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block; /* Mengatur item menu agar berdampingan */
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membagi container menjadi dua kolom */
+    align-items: center;
+    margin: 4rem;
+    height: 500px;
+    padding: 20px;
+}
+
+.profile-picture {
+    text-align: center; /* Mengatur foto profil menjadi tengah */
+}
+
+.profile-picture img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Untuk memastikan foto terisi di bingkai */
+    border-radius: 50%; /* Untuk membuat foto menjadi lingkaran */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek mendalam */
+}
+
+.intro {
+    margin-bottom: 20px; /* Jarak antara teks perkenalan dan timeline */
+    padding-right: 30px;
+}
+
+.intro h1 {
+
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    text-align: justify;
+}
+.intro .contact-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.intro .contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #967E76;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.intro .contact-btn:hover {
+    background-color: #D7C0AE; /* Warna tombol saat dihover */
+}
+
+.container-timeline {
+    margin: 4rem;
+    height: 500px;
+    display: flex;
+}
+
+.timeline {
+    max-width: 1400px; /* Lebar maksimum untuk timeline */
+    width: 100%;
+    background-color: #967E76;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek mendalam */
+    text-align: center;
+    height: fit-content;
+    transition: 0.7s;
+}
+.timeline:hover {
+    background-color: #D7C0AE;
+}
+
+.timeline h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.timeline ul {
+    list-style-type: none;
+}
+
+.timeline ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li .time {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.timeline ul li .content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.timeline ul li .content p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.container-certificate {
+    margin: 4rem;
+    height: 500px;
+    display: flex;
+}
+.container-certificate .certificate:hover {
+    background-color: #D7C0AE; /* Warna tombol saat dihover */
+}
+
+.container-certificate .certificate {
+    max-width: 1400px; /* Lebar maksimum untuk sertifikat */
+    width: 100%;
+    background-color: #967E76;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek mendalam */
+    text-align: center;
+    height: fit-content;
+    display: block;
+    transition:0.7s;
+}
+
+.certificate ul {
+    list-style: none;
+}
+
+.certificate .content {
+    margin-bottom: 20px;
+}
+
+.certificate .content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Untuk memastikan foto terisi di bingkai */
+    border-radius: 50%; /* Untuk membuat foto menjadi lingkaran */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek mendalam */
+    margin-bottom: 20px;
+}
+
